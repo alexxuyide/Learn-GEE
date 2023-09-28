@@ -59,8 +59,7 @@ Elements of notation:
 
 ## Estimating the mean and correlation
 
-First, create sample data and calculate a matrix to use as a mask for the off-diagonal products for calculating variance.
-Also calculate the denominators for variance and covariance calculations.
+First, create sample data and calculate a matrix to use as a mask for the off-diagonal products for calculating variance. Also calculate the denominators for variance and covariance calculations.
 
 ```{r create-sample-data}
 # create simple data 
@@ -93,7 +92,7 @@ Here is a process for the estimation:
 
 -   start with assumption of no correlation $R$ = 0
 -   calculate estimate of $\mu$ based on $R$ = 0 (no auto-correlation)
--   calculate new estimate $r$ of $R$ 
+-   calculate new estimate $r$ of $R$
 -   recalculate $w$ weight for each observation as 1 / (1 + ($k$-1)$r$)
 
 ```{r reweight function}
